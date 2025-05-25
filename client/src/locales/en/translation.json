@@ -1,0 +1,125 @@
+{
+    "hero":{
+      "titre":"SARL Bennour industry and services",
+    "description":"Explore our site to discover our products, services and vision for a sustainable future.",
+    "button1":"contact us",
+    "button2":"learn more",
+    "1":"Disposable Medical Equipment",
+    "2":"Customized Non-Woven Bags",
+    "3":"Non-Woven Fabrics for Agricultural Protection"
+  },
+     "Index": {
+      "title": "We care About Ur Smile!",
+      "subtitle": "We believe in a holistic approach to oral health. It's not just about achieving a beautiful smile – it's about building a foundation for a lifetime of healthy teeth and gums."
+    },
+     "navbar":{
+      "home":{
+        "name":"Home",
+        "hash":"#accueil"
+      },
+      "services":{
+        "name":"Services",
+        "hash":"#services"
+      },
+      "us":{
+        "name":"Why Us?",
+        "hash":"#nous"
+      },
+      "contact":{
+        "name":"Contact",
+        "hash":"#Contact"
+      }
+    },
+    "heroButton":{
+      "name":"Invest in your smile - it`s worth it !"
+    },
+    "callAction":{
+      "text":"Make Appointment"
+    },
+     "About":{
+      "title":"A Leading Algerian Company in Non-Woven Textiles Since 2020" ,
+      "description":"Welcome to SARL BENNOUR Industry and Services Since its establishment in 2020, SARL BENNOUR Industry and Services has emerged as a key player in the non-woven textile industry in Algeria. Located in the KOUNININE Activity Zone, in the El Oued province, our company leverages its expertise to serve vital sectors such as agriculture, healthcare, food processing, and commerce. We specialize in the production of non-woven textile solutions designed to meet the highest standards of quality, hygiene, and durability. Our goal is to offer innovative, environmentally friendly products tailored to the specific needs of our clients."
+    },
+    "Email":{
+      "title":"exceptional service demands exceptional patients.",
+      "question":"how we can help u?"
+    },
+    "Footer":{
+      "title":"stay healthy",
+      "more":"For More",
+      "work":"Work",
+      "contact":"Contact Me"
+    },
+    "Services":
+    {
+      "title":"High Quality Products For You",
+      "description":"Discover our complete range of single-use medical protective equipment, designed to ensure safety, hygiene, and comfort in all professional environments. Whether for healthcare staff, patients, or visitors, our products meet the strictest health standards.",
+      "sac":{
+        "title":"Practical, sustainable and ecological packaging solutions",
+        "shirt":{
+          "title":"T-shirt bag",
+          "description":"Lightweight bag with T-shirt shaped handles, ideal for everyday shopping and retail."
+        },
+        "shopping":{
+          "title":"Shopping bag",
+          "description":" Reusable bag with strong handles, designed for shopping and carrying bulky items."
+        },
+        "box":{
+          "title":"Box bag",
+          "description":"Keep your smile healthy and bright with our gentle cleaning and shine service for your teeth."
+        },
+        "caba":{
+          "title":"Sac CABA",
+          "description":"Sturdy bag with reinforced handles, often used for heavy purchases or as a promotional bag."
+        }
+      },
+      "tenu":{
+        "title":"Nonwoven Fabric Production",
+        "Cap":{
+          "title":"Medical Cap",
+          "description":"Breathable, non-woven surgical bouffant cap. Convenient and breathable, it allows the kitchen to maintain the hygiene in the operating room."
+        },
+        "Chaussure":{
+          "title":"shoe covers",
+          "description":"Disposable medical shoe covers, made of non-woven or plastic. Protect against cross-contamination in sterile environments."
+        },
+        "Combinaison":{
+          "title":"Protective suit",
+          "description":"Disposable protective suit designed to protect against particles, liquids, and infectious agents. For use in medical, industrial, or healthcare settings."
+        },
+        "Casaque":{
+          "title":"Surgical gown",
+          "description":"Sterile, single-use surgical gown. Provides a protective barrier against fluids and infectious agents. Used in operating rooms."
+        },
+        "Blouse":{
+          "title":"Blouse medicals",
+          "description":"Lightweight and durable disposable medical gown. Protects against splashes and contamination. Ideal for clinical and hospital environments."
+        },
+        "mask3":{
+          "title":"3-ply mask",
+          "description":"Disposable 3-ply mask, made up of three filter layers. Effective protection against splashes and particles. For medical and general use."
+        }
+      },
+      "plus":{
+        "Denture":{
+          "title":"prosthodontics",
+          "description":"Dentures are like dress-up for your mouth, giving you a full set of dazzling pretend teeth for a winning smile!"
+        },
+        "minor":{
+          "title":"Minor Surgery",
+          "description":"Need a minor dental procedure? We're here to help! Our clinic offers a variety of small surgeries, performed with the utmost precision and care, ensuring your comfort and optimal results."
+        },
+        "gumy":{
+          "title":"Gingivectomy",
+          "description":"A procedure to remove excess gum tissue, improving gum health and enhancing the appearance of your smile."
+        },
+        "Wisdom":{
+          "title":"Wisdom Tooth Extraction",
+          "description":"Surgical removal of wisdom teeth to prevent pain, crowding, or infection, ensuring long-term oral health."
+        }
+        },
+        "header":{
+          "title":"High quality services for you "
+        }
+    }
+}

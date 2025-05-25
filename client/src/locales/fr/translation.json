@@ -1,0 +1,127 @@
+{ 
+  "hero":{
+    "titre":"SARL Bennour industrie et service",
+    "description":"Explorez notre site pour découvrir nos produits, nos services et notre vision tournée vers un avenir durable.",
+    "button1":"contacter nous",
+    "button2":"Savoirs Plus",
+    "1":"Équipements médicaux jetables",
+    "2":"Sacs personnalisés en non-tissé",
+    "3":"Tissus non tissés pour la protection agricole"
+  },
+  "Index": {
+      "title": " Souriez tant que vous avez encore des dents",
+      "subtitle": "Prendre soin de sa santé buccodentaire signifie bien plus qu’un simple sourire éclatant ! "
+    },
+    "callAction":{
+      "text":"Make Appointment"
+    },
+   "navbar":
+    {
+     "home":{
+        "name":"Acceuil",
+        "hash":"#accueil"
+      },
+      "services":{
+        "name":"services",
+        "hash":"#services"
+      },
+      "us":{
+        "name":"pourquoi nous?",
+        "hash":"#nous"
+      },
+      "contact":{
+        "name":"Contact",
+        "hash":"#Contact"
+      }
+    },
+    "heroButton":{
+      "name":"Investir dans votre sourire - it`s worth it !"
+    },
+    "About":{
+      "title":"Un leader algérien du textile non tissé depuis 2020" ,
+      "description":"Bienvenue chez SARL BENNOUR Industrie et Services Depuis sa création en 2020, SARL BENNOUR Industrie et Services s’est imposée comme un acteur clé dans le domaine du textile non tissé en Algérie. Implantée dans la Zone d’Activités de KOUNININE, wilaya d’El Oued, notre entreprise met son savoir-faire au service de plusieurs secteurs vitaux tels que l’agriculture, la santé, l’agroalimentaire et le commerce. Nous sommes spécialisés dans la production de solutions textiles non tissées destinées à répondre aux exigences les plus strictes en matière de qualité, d’hygiène et de durabilité. Notre objectif est de proposer des produits innovants, respectueux de l’environnement et adaptés aux besoins spécifiques de nos clients."
+    },
+    "Email":{
+      "title":"un service exceptionnel exige des patients exceptionnels.",
+      "question":"Comment puis-je t'aider?"
+    }, 
+    "Footer":{
+      "title":"Bien-être",
+      "more":"Pour Plus",
+      "work":"De Travail",
+      "contact":"Contacter moi"
+    },
+     "Services":
+    {
+      "title":"Des produits de haute qualité pour vous",
+      "description":"Découvrez notre gamme complète de protections médicales à usage unique, conçues pour assurer sécurité, hygiène et confort dans tous les environnements professionnels. Que ce soit pour le personnel soignant, les patients ou les visiteurs, nos produits répondent aux normes sanitaires les plus strictes.",
+      "sac":{
+        "title":"Des solutions d’emballage pratiques, durables et écologiques",
+        "shirt":{
+        "title":"Sac à tee-shirt",
+        "description":"Sac léger avec poignées en forme de T-shirt, idéal pour les courses quotidiennes et les commerces de détail."
+      },
+      "shopping":{
+        "title":"Sac à provisions",
+        "description":"Le blanchiment après un détartrage amplifie l'éclat des dents et embellit votre sourire."
+      },
+      "box":{
+        "title":"Sac de boîte",
+        "description":"Sac à base carrée et parois rigides, parfait pour emballer des produits alimentaires ou des articles plus lourds."
+      },
+      "caba":{
+        "title":"Sac CABA",
+        "description":"Sac robuste à poignées renforcées, souvent utilisé pour les achats lourds ou comme sac promotionnel."
+      }
+      },
+      "tenu":{
+        "title":"Production Du Tissu Non Tissé",
+        "Cap":{
+          "title":"charlotte clip",
+          "description":"Chapeau gonflant chirurgical jetable, en non-tissé. Confortable et respirant, il couvre entièrement les cheveux pour maintenir l’hygiène en bloc opératoire."
+        },
+        "Chaussure":{
+          "title":"Sur Chaussure",
+          "description":"Couvre-chaussures médicaux jetables, en non-tissé ou plastique. Protègent contre la contamination croisée dans les environnements stériles."
+        },
+        "Combinaison":{
+          "title":"Comobinaison de protection",
+          "description":"Combinaison de protection jetable, conçue pour protéger contre les particules, liquides et agents infectieux. Utilisation en milieu médical, industriel ou sanitaire."
+        },
+        "Casaque":{
+          "title":"Casaque Chirugicale",
+          "description":"Casaque chirurgicale stérile, à usage unique. Fournit une barrière protectrice contre les fluides et agents infectieux. Utilisée en bloc opératoire."
+        },
+        "Blouse":{
+          "title":"Blouse medicals",
+          "description":"Blouse médicale jetable, légère et résistante. Protège contre les éclaboussures et la contamination. Idéale pour les environnements cliniques et hospitaliers."
+        },
+      "mask3":{
+        "title":"Mask 3 plis",
+        "description":"Masque 3 plis jetable, composé de trois couches filtrantes. Protection efficace contre les projections et particules. Usage médical et grand public."
+      }
+      },
+      "plus":{
+        "Wisdom":{
+        "title":"Extraction des dents de sagesse",
+        "description":"Procédure visant à retirer les dents de sagesse pour prévenir les douleurs, infections, ou problèmes orthodontiques."
+      },
+      "Denture":{
+        "title":"Prothèse dentaire amovible ",
+        "description":"Remplace les dents manquantes avec des prothèses sur mesure, offrant confort et restauration du sourire."
+      },
+      "minor":{
+        "title":"petite Chirurgie ",
+        "description":"Interventions chirurgicales peu invasives pour traiter des conditions bucco-dentaires spécifiques, assurant un rétablissement rapide et confortable."
+      },
+      "gumy":{
+        "title":"Gingivectomie",
+        "description":"Obtenez un sourire plus équilibré. Gardez vos gencives en bonne santé : il est plus facile de les garder propres !Évitez les problèmes plus tard : nous pouvons résoudre tous les problèmes de gencive avant qu’ils ne s’aggravent."
+      }
+      },
+      "header":{
+        "title":"Services de haute qualité  pour vous "
+      }
+    }
+}
+  

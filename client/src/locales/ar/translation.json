@@ -1,0 +1,127 @@
+{  
+  "hero":{
+    "titre":"شركة بنور للصناعة والخدمات",
+    "description":"استكشف موقعنا لتكتشف منتجاتنا وخدماتنا ورؤيتنا لمستقبل مستدام.",
+    "button1":"اتصل بنا",
+    "button2":"اعرف المزيد",
+    "1":"المعدات الطبية التي تستخدم لمرة واحدة",
+    "2":"أكياس غير منسوجة مخصصة",
+    "3":" الأقمشة غير المنسوجة للحماية الزراعية"
+  },
+     "Index": {
+      
+      "title": "We care About Ur Smile!",
+      "subtitle": "We believe in a holistic approach to oral health. It's not just about achieving a beautiful smile – it's about building a foundation for a lifetime of healthy teeth and gums."
+    },
+    "callAction":{
+      "text":"Make Appointment"
+    },
+   "navbar":
+    {
+      "home":{
+        "name":"الرئيسية",
+        "hash":"#accueil"
+      },
+      "services":{
+        "name":"الخدمات",
+        "hash":"#services"
+      },
+      "us":{
+        "name":"لماذا نحن",
+        "hash":"#nous"
+      },
+      "contact":{
+        "name":"اتصل بنا",
+        "hash":"#Contact"
+      }
+    },
+    "heroButton":{
+      "name":"Invest in your smile - it`s worth it !"
+    },
+    "About":{
+      "title":"شركة جزائرية رائدة في مجال النسيج غير المنسوج منذ عام 2020" ,
+      "description":"مرحبًا بكم في شركة بن نور للصناعة والخدمات (SARL BENNOUR) منذ تأسيسها في عام 2020، برزت شركة بن نور للصناعة والخدمات كفاعل رئيسي في مجال المنسوجات غير المنسوجة في الجزائر. تقع شركتنا في منطقة النشاطات بكوينين، ولاية الوادي، وتضع خبرتها في خدمة عدة قطاعات حيوية مثل الزراعة، الصحة، الصناعات الغذائية، والتجارة. نحن متخصصون في إنتاج حلول نسيجية غير منسوجة تلبي أعلى معايير الجودة والنظافة والمتانة. هدفنا هو تقديم منتجات مبتكرة، صديقة للبيئة، ومصممة لتلبية احتياجات عملائنا الخاصة."
+    },
+    "Email":{
+      "title":"exceptional service demands exceptional patients.",
+      "question":"how we can help u?"
+    },
+    "Footer":{
+      "title":"stay healthy",
+      "more":"For More",
+      "work":"Work",
+      "contact":"Contact Me"
+    },
+       "Services":
+    {
+      "title":"منتجات عالية الجودة نقدمها لك",
+      "description":"اكتشف مجموعتنا الكاملة من وسائل الحماية الطبية للاستخدام مرة واحدة، والمصممة لضمان السلامة والنظافة والراحة في جميع البيئات المهنية. سواء لموظفي الرعاية الصحية أو المرضى أو الزوار، فإن منتجاتنا تلبي أعلى المعايير الصحية الصارمة.",
+      "sac":{
+        "title":"حلول تغليف عملية ومستدامة وصديقة للبيئة",
+        "shirt":{
+        "title":"حقيبة تي شيرت",
+        "description":"حقيبة خفيفة الوزن بمقابض على شكل تي شيرت، مثالية للتسوق اليومي والتجزئة."
+      },
+      "shopping":{
+        "title":"كيس التسوق",
+        "description":"كيس قابل لإعادة الاستخدام من المواد الصلبة، مصمم للطبقات ونقل الأشياء كبيرة الحجم."
+      },
+      "box":{
+        "title":"حقيبة صندوقية",
+        "description":"حقيبة ذات قاعدة مربعة وجدران صلبة، مثالية لتعبئة المنتجات الغذائية أو العناصر الثقيلة."
+      },
+      "caba":{
+        "title":"شنطة",
+        "description":"حقيبة قوية بمقابض معززة، تستخدم غالبًا للمشتريات الثقيلة أو كحقيبة ترويجية."
+      }
+      },
+      "tenu":{
+        "title":"إنتاج الأقمشة غير المنسوجة",
+        "Cap":{
+        "title":"قبعات جراحية ",
+        "description":"غطاء جراحي قابل للنفخ للاستخدام مرة واحدة، مصنوع من قماش غير منسوج. مريح وجيد التهوية، ويغطي الشعر بالكامل للحفاظ على النظافة في غرفة العمليات."
+      },
+      "Chaussure":{
+        "title":" أغطية أحذية طبية "  ,
+        "description":"أغطية أحذية طبية يمكن التخلص منها، مصنوعة من مواد غير منسوجة أو بلاستيكية. الحماية من التلوث المتبادل في البيئات المعقمة."
+      },
+      "Combinaison":{
+        "title":"بدلة واقية",
+        "description":"بدلة وقائية يمكن التخلص منها، مصممة للحماية من الجسيمات والسوائل والعوامل المعدية. يمكن استخدامه في البيئات الطبية أو الصناعية أو الصحية."
+      },
+      "Casaque":{
+        "title":"ثوب جراحي",
+        "description":"ثوب جراحي معقم للاستخدام مرة واحدة. يوفر حاجزًا وقائيًا ضد السوائل والعوامل المعدية. يستخدم في غرفة العمليات."
+      },
+      "Blouse":{
+        "title":"ثوب طبي",
+        "description":"ثوب طبي للاستخدام مرة واحدة، خفيف الوزن ومتين. يحمي من البقع والتلوث. مثالي للبيئات السريرية والمستشفيات."
+      },
+      "mask3":{
+        "title":"قناع ثلاثي الطبقات",
+        "description":"قناع قابل للاستخدام مرة واحدة، مكون من ثلاث طبقات من الفلتر. حماية فعالة ضد الإسقاطات والجسيمات. للاستخدام الطبي والاستهلاكي."
+      }
+      },
+      "plus":{
+        "Wisdom":{
+        "title":"Extraction des dents de sagesse",
+        "description":"Procédure visant à retirer les dents de sagesse pour prévenir les douleurs, infections, ou problèmes orthodontiques."
+      },
+      "Denture":{
+        "title":"Prothèse dentaire amovible ",
+        "description":"Remplace les dents manquantes avec des prothèses sur mesure, offrant confort et restauration du sourire."
+      },
+      "minor":{
+        "title":"petite Chirurgie ",
+        "description":"Interventions chirurgicales peu invasives pour traiter des conditions bucco-dentaires spécifiques, assurant un rétablissement rapide et confortable."
+      },
+      "gumy":{
+        "title":"Gingivectomie",
+        "description":"Obtenez un sourire plus équilibré. Gardez vos gencives en bonne santé : il est plus facile de les garder propres !Évitez les problèmes plus tard : nous pouvons résoudre tous les problèmes de gencive avant qu’ils ne s’aggravent."
+      }
+      },
+      "header":{
+        "title":"Services de haute qualité  pour vous "
+      }
+    }
+}
