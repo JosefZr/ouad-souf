@@ -157,7 +157,7 @@ export default function NewNavbar() {
                                 <LanguageSwitcher />
                             </div>
                             <img
-                                src="/vite.svg"
+                                src="/images/logo.jpg"
                                 alt="Logo"
                                 width={50}
                                 height={50}
