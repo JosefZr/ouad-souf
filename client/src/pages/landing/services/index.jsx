@@ -53,10 +53,10 @@ export default function Services() {
                     <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full border border-blue-200/50 backdrop-blur-sm mb-6">
                         <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">Our Services</span>
                     </div>
-                    <h1 className="reveal-vertical text-5xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-6 text-wrap max-w-[90%] mx-auto leading-tight">
+                    <h1 className="reveal-vertical text-5xl max-md:text-2xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-6 text-wrap max-w-[90%] mx-auto leading-tight">
                         {t("Services.title")}
                     </h1>
-                    <p className="reveal-vertical text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    <p className="reveal-vertical text-xl max-sm:text-[15px] text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         {t("Services.description")}
                     </p>
                 </div>
@@ -176,7 +176,7 @@ function ServiceCarousel({
                                 {services.length} Service{services.length !== 1 ? "s" : ""}
                             </span>
                         </div>
-                        <h2 className="reveal-vertical text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">{title}</h2>
+                        <h2 className="reveal-vertical text-xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">{title}</h2>
                         <p className="text-gray-600 mb-6 text-lg leading-relaxed">{description}</p>
 
                         {/* Progress Indicator */}

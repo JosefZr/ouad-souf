@@ -12,7 +12,7 @@ export default function Card({ titre, content, image }) {
                     <img
                         alt={titre || "Service image"}
                         src={image}
-                        className="max-h-96 w-full object-cover  transition-transform duration-500 group-hover:scale-105"
+                        className="max-h-72 w-full object-cover  transition-transform duration-500 group-hover:scale-105"
                         loading="lazy"
                     />
                 </div>
@@ -22,11 +22,11 @@ export default function Card({ titre, content, image }) {
 
             {/* Content Container */}
             <div className="flex-1 p-6 flex flex-col">
-                <h3 className="text-2xl capitalize  font-semibold text-gray-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-2xl max-sm:xl capitalize  font-semibold text-gray-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors duration-300">
                     {titre}
                 </h3>
 
-                <p className="text-gray-600 text-lg leading-relaxed flex-1 line-clamp-4">{content}</p>
+                <p className="text-gray-600 text-lg max-sm:text-sm leading-relaxed flex-1 line-clamp-4">{content}</p>
 
                 {/* Optional: Add a "Learn More" indicator */}
                 {/* <div className="mt-4 pt-4 border-t border-gray-100">

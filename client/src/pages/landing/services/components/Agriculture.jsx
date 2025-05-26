@@ -1,4 +1,24 @@
+import { Award, CheckCircle, Target, Users } from "lucide-react"
+import { motion, useScroll, useTransform } from "framer-motion"
 export default function Agriculture() {
+    const features = [
+        {
+            icon: <Award className="w-5 h-5" />,
+            text: "Protection très haute contre le froid",
+        },
+        {
+            icon: <Users className="w-5 h-5" />,
+            text: "Régulation des températures pour un développement optimal",
+        },
+        {
+            icon: <Target className="w-5 h-5" />,
+            text: "Accélération de la germination des plantes",
+        },
+        {
+            icon: <CheckCircle className="w-5 h-5" />,
+            text: "Résistance mécanique et effet brise-vent",
+        },
+    ]
     return (
         <section className="relative overflow-hidden">
             {/* Green background with leaf pattern */}
@@ -29,7 +49,7 @@ export default function Agriculture() {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center md:gap-12">
                     <div>
                         <div className="max-w-lg md:max-w-none mx-auto">
-                            <h2 className="text-2xl font-semibold text-white sm:text-3xl text-center mb-2">
+                            <h2 className="text-4xl max-sm:text-2xl font-semibold text-white sm:text-3xl text-center mb-2">
                                 Fonctions principales de nos produits agricoles
                             </h2>
 
@@ -45,22 +65,24 @@ export default function Agriculture() {
                             </p>
 
                             <ul className="mt-8 space-y-4 text-white/90">
-                                <li className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-2"></div>
-                                    <span>Protection très haute contre le froid</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-2"></div>
-                                    <span>Régulation des températures pour un développement optimal</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-2"></div>
-                                    <span>Accélération de la germination des plantes</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <div className="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-2"></div>
-                                    <span>Résistance mécanique et effet brise-vent</span>
-                                </li>
+                                {/* Features List */}
+                                <div className=" reveal-horizontal-right">
+                                    {features.map((feature, index) => (
+                                        <motion.div
+                                            key={index}
+                                            className="flex items-center gap-3 p-3 rounded-lg hover:bg-white/50 cursor-pointer transition-colors duration-300"
+                                            initial={{ opacity: 0, x: -20 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            transition={{ delay: index * 0.1 }}
+                                        >
+                                            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-teal-500 to-green-500 rounded-full flex items-center justify-center text-white">
+                                                {feature.icon}
+                                            </div>
+                                            <span className="text-white font-medium">{feature.text}</span>
+                                        </motion.div>
+                                    ))}
+                                </div>
+
                             </ul>
                         </div>
                     </div>
