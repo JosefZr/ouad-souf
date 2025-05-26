@@ -43,7 +43,6 @@ function Intro() {
                 className={`fixed ${hight ? 'relative' : 'max-md:relative'}`}
                 style={applyTransform ? { scale } : { position: 'relative' }}
             >
-                <Hero2 />
                 {/* <Reserving /> */}
             </motion.div>
         </motion.section>

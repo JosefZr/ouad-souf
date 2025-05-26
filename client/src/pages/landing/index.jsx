@@ -1,25 +1,26 @@
-import { GlobalNavbar } from "@/components";
-import Hero from "@/pages/landing/hero-section/Hero";
-import { MODAL_TYPE, useModal } from "@/hooks/useModalStore";
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { TimeLineSection } from "@/components";
-import { FinalSection } from "@/components";
-import { Faq } from "@/components";
-import OneYear from "./one-year";
-import AskYourself from "./ask-yourself";
-import Exclusive from "./exclusive";
-import Path from "./path";
+// import { GlobalNavbar } from "@/components";
+// import Hero from "@/pages/landing/hero-section/Hero";
+// import { MODAL_TYPE, useModal } from "@/hooks/useModalStore";
+// import { useEffect, useState } from "react";
+// import { useParams } from "react-router-dom";
+// import { TimeLineSection } from "@/components";
+// import { FinalSection } from "@/components";
+// import { Faq } from "@/components";
+// import OneYear from "./one-year";
+// import AskYourself from "./ask-yourself";
+// import Exclusive from "./exclusive";
+// import Path from "./path";
 import { Seo } from "@/components/Seo";
 import NewNavBar from "@/components/NewNavBar";
 import { AnimatePresence } from "framer-motion";
 import Intro from "./intro";
-import Hero2 from "./intro/components/Hero2";
+// import Hero2 from "./intro/components/Hero2";
 import About from "./nous";
 import Commandes from "./commonds";
 import Services from "./services";
 import Footer from "./footer";
 import Agriculture from "./services/components/Agriculture";
+import Hero2 from "./intro/components/Hero2";
 export default function Landing() {
     // const [countdown, setCountdown] = useState(2); // Countdown for delay note
     // const { onOpen } = useModal()
@@ -47,12 +48,12 @@ export default function Landing() {
                 description="SARL BENNOUR est une société privée créée en 2020, elle a investi dans le domaine des tissus non tissés. Ce produit est largement utilisé dans les services médicaux ainsi que d’autres secteurs tels que les sacs à provisions, les emballages alimentaires écologiques, l’habillement, l’ameublement"
                 keywords="Sacs shopping  box bag  sac pharmacie  sac pour farine, semoule et riz sac tissu non tissé personnalisés"
             />
-            <div className="relative min-h-screen overflow-hidden  dark:bg-zinc-950 bg-slate-50"
-                style={{ fontFamily: "'Funnel Display', sans-serif" }}
+            <div className=" min-h-screen overflow-hidden  dark:bg-zinc-950 bg-slate-50"
+                style={{ fontFamily: "'Funnel Display', sans-serif", position: "relative" }}
             >
                 {/* <GlobalNavbar /> */}
                 < NewNavBar />
-                <Intro />
+
                 <div
 
                     style={{
@@ -60,6 +61,7 @@ export default function Landing() {
                     }}
                     className=" z-20 overflow-x-clip">
                     {/* <Hero2 /> */}
+                    <Hero2 />
                     <Services />
                     <Agriculture />
                     <About />

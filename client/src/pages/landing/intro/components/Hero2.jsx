@@ -1,23 +1,30 @@
-import { Button } from "@/components/ui/button";
-import useReveal from "@/hooks/useReveal";
-import { useSectionInView } from "@/hooks/useSelectInView";
-import { cn } from "@/lib/utils";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
-import { HashLink as Link } from 'react-router-hash-link';
+"use client"
+
+import { Button } from "@/components/ui/button"
+import useReveal from "@/hooks/useReveal"
+import { useSectionInView } from "@/hooks/useSelectInView"
+import { cn } from "@/lib/utils"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useEffect, useState } from "react"
+import { useTranslation } from "react-i18next"
+import { HashLink as Link } from "react-router-hash-link"
 
 export default function Hero2() {
-    const { t } = useTranslation();
+    const { t } = useTranslation()
+    const { t: r } = useTranslation()
+    const { ref } = useSectionInView(r("navbar.home.name"), 0.5)
 
-    const { t: r } = useTranslation();
-    const { ref } = useSectionInView(r("navbar.home.name"), 0.5);
-    // Background images array - only images change
-    const backgroundImages = ["/images/i3.jpg", "/images/i4.jpg", "/images/i5.jpg", "/images/i6.jpg", "/images/i11.jpg", "/images/i13.webp"]
-    // const s = useTranslation('Services');
+    const backgroundImages = [
+        "/images/i3.jpg",
+        "/images/i4.jpg",
+        "/images/i5.jpg",
+        "/images/i6.jpg",
+        "/images/i11.jpg",
+        "/images/i13.webp",
+    ]
     const [currentSlide, setCurrentSlide] = useState(0)
     const [isAutoPlaying, setIsAutoPlaying] = useState(true)
-    // Auto-rotation effect
+
     useEffect(() => {
         if (!isAutoPlaying) return
 
@@ -35,125 +42,138 @@ export default function Hero2() {
     const goToPrevious = () => {
         setCurrentSlide((prev) => (prev - 1 + backgroundImages.length) % backgroundImages.length)
     }
+
     const goToNext = () => {
         setCurrentSlide((prev) => (prev + 1) % backgroundImages.length)
     }
 
-    useReveal('vertical');
-    useReveal('horizontal');
+    useReveal("vertical")
+    useReveal("horizontal")
+
     return (
-        <div ref={ref} className="relative w-full mt-16">
-            <section
-                ref={ref}
-                className="relative min-h-screen w-full  flex items-center justify-center overflow-hidden "
-                onMouseEnter={() => setIsAutoPlaying(false)}
-                onMouseLeave={() => setIsAutoPlaying(true)}
-            >
-                {/* Background Images with Transitions */}
-                {backgroundImages.map((image, index) => (
-                    <div
-                        key={index}
-                        className={cn(
-                            "absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000",
-                            index === currentSlide ? "opacity-100" : "opacity-0",
-                        )}
-                        style={{
-                            backgroundImage: `url('${image}')`,
-                        }}
-                    >
-                        <div className="absolute inset-0 bg-black/40" />
+        <div id='accueil' ref={ref} style={{ position: "relative" }} className=" w-full mt-16">
+            <section style={{ position: "relative" }} className="  w-full flex ">
+                {/* Left Side - Content with Gradient Background */}
+                <div className=" w-full lg:w-1/2 flex items-center justify-center ">
+                    {/* Gradient Background with Geometric Elements */}
+                    <div style={{ position: "absolute" }} className=" inset-0 bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600">
+                        {/* Geometric decorative elements */}
+                        <div style={{ position: "absolute" }} className=" top-10 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
+                        <div style={{ position: "absolute" }} className=" top-32 right-20 w-16 h-16 bg-white/15 rounded-full blur-lg"></div>
+                        <div style={{ position: "absolute" }} className=" bottom-20 left-16 w-24 h-24 bg-white/10 rounded-full blur-xl"></div>
+
+                        {/* Diagonal lines */}
+                        <div style={{ position: "absolute" }} className=" top-0 right-0 w-32 h-full bg-gradient-to-l from-white/5 to-transparent transform skew-x-12"></div>
+                        <div style={{ position: "absolute" }} className=" top-0 right-8 w-16 h-full bg-gradient-to-l from-white/10 to-transparent transform skew-x-12"></div>
+
+                        {/* Dot pattern */}
+                        <div style={{ position: "absolute" }} className=" bottom-32 right-20 grid grid-cols-4 gap-2">
+                            {[...Array(12)].map((_, i) => (
+                                <div key={i} className="w-2 h-2 bg-white/30 rounded-full"></div>
+                            ))}
+                        </div>
                     </div>
-                ))}
 
-                {/* Navigation Arrows */}
-                <button
-                    onClick={goToPrevious}
-                    className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/20 p-3 text-white backdrop-blur-sm transition-all hover:bg-white/30 lg:left-8"
-                    aria-label="Previous slide"
-                >
-                    <ChevronLeft className="h-6 w-6" />
-                </button>
+                    {/* Content */}
+                    <div style={{ position: "relative" }} className=" z-10 px-8 lg:px-16 py-16 ">
+                        <div className="text-white">
+                            <p className="text-sm font-medium tracking-wider uppercase opacity-90 mb-4">
+                                {t("hero.subtitle") || "LOREM IPSUM DOLOR"}
+                            </p>
 
-                <button
-                    onClick={goToNext}
-                    className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/20 p-3 text-white backdrop-blur-sm transition-all hover:bg-white/30 lg:right-8"
-                    aria-label="Next slide"
-                >
-                    <ChevronRight className="h-6 w-6" />
-                </button>
+                            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">{t("hero.titre")}</h1>
 
-                {/* Content Container */}
-                <div className="relative z-10 w-full px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-40">
-                    <div className="mx-auto ">
-                        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center md:gap-12 lg:gap-16">
-                            {/* Text Content with Animations */}
-                            <div className=" text-center md:text-left">
-                                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                                    {t("hero.titre")}
+                            <p className="text-lg lg:text-xl leading-relaxed opacity-90 mb-8 max-w-lg">{t("hero.description")}</p>
 
-                                </h1>
+                            {/* Call to Action Button */}
+                            <div className="mb-8">
+                                <Button
+                                    size="lg"
+                                    className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                                >
+                                    <Link to="#Contact" scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                                        {t("hero.button1") || "READ MORE"}
+                                        <span className="ml-2 text-xl">+</span>
+                                    </Link>
+                                </Button>
+                            </div>
 
-                                <p className="mt-6 text-lg leading-8 text-gray-200 sm:text-xl">
-                                    {t("hero.description")}
-                                </p>
-
-                                {/* Call to Action Buttons */}
-                                <div className="mt-8 flex flex-col gap-4  sm:flex-row sm:justify-center md:justify-start">
-                                    <Button
-                                        size="lg"
-                                        className="bg-gradient-to-r capitalize text-xl from-blue-600 to-purple-600 px-14 py-8 text-white shadow-lg transition-all hover:from-blue-700 hover:to-purple-700 hover:shadow-xl hover:scale-105"
-                                    >
-                                        <Link to="#Contact" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
-                                            {t("hero.button1")}
-                                        </Link>
-                                    </Button>
-                                    <Button
-                                        variant="outline"
-                                        size="lg"
-                                        className="border-white/30 text-xl bg-white/10 px-14 py-8 text-white backdrop-blur-sm transition-all hover:bg-white/20"
-                                    >
-                                        <Link to="#nous" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
-                                            {t("hero.button2")}
-                                        </Link>
-                                    </Button>
+                            {/* Features List */}
+                            <div className="space-y-3">
+                                <div className="flex items-center gap-3 text-white/90">
+                                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                                    <span className="text-lg">{t("hero.1")}</span>
                                 </div>
-
-                                {/* Features List */}
-                                <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
-                                    <div className="flex items-center gap-2 text-xl text-gray-200">
-                                        <div className="h-4 w-4 rounded-full bg-green-400" />
-                                        {t("hero.1")}
-                                    </div>
-                                    <div className="flex items-center gap-2 text-xl text-gray-200">
-                                        <div className="h-4 w-4 rounded-full bg-green-400" />
-                                        {t("hero.2")}
-                                    </div>
-                                    <div className="flex items-center gap-2 text-xl text-gray-200">
-                                        <div className="h-4 w-4 rounded-full bg-green-400" />
-                                        {t("hero.3")}
-                                    </div>
+                                <div className="flex items-center gap-3 text-white/90">
+                                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                                    <span className="text-lg">{t("hero.2")}</span>
+                                </div>
+                                <div className="flex items-center gap-3 text-white/90">
+                                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                                    <span className="text-lg">{t("hero.3")}</span>
                                 </div>
                             </div>
 
-                            {/* Visual Element */}
-                            <div className="relative animate-in fade-in slide-in-from-right-8 duration-700">
-                                <div className="relative mx-auto max-w-lg">
-                                    {/* Dashboard Mockup */}
-
-
-                                    {/* Floating Elements */}
-                                    <div className="absolute -top-4 -right-4 h-16 w-16 rounded-full bg-gradient-to-br from-yellow-400/60 to-orange-500/60" />
-                                    <div className="absolute -bottom-4 -left-4 h-12 w-12 rounded-full bg-gradient-to-br from-pink-400/60 to-red-500/60" />
+                            {/* Contact Info */}
+                            <div className="mt-12 pt-8 border-t border-white/20">
+                                <div className="flex flex-wrap gap-6 text-sm text-white/80">
+                                    <span>CONTACT US</span>
+                                    <span>+123 456 789</span>
+                                    <span>Your company © 2024. All rights reserved.</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div >
 
-                {/* Slide Indicators */}
-                <div className="absolute bottom-8 left-1/2 z-20 flex -translate-x-1/2 space-x-3" >
-                    {
-                        backgroundImages.map((_, index) => (
+                    {/* Diagonal Cut */}
+                    <div style={{ position: "absolute" }} className=" top-0 right-0 w-32 h-full bg-gradient-to-l from-white to-transparent transform skew-x-12 translate-x-16"></div>
+                </div>
+
+                {/* Right Side - Image Carousel */}
+                <div
+                    style={{ position: "relative" }}
+                    className=" w-full lg:w-1/2 lg:block hidden"
+                    onMouseEnter={() => setIsAutoPlaying(false)}
+                    onMouseLeave={() => setIsAutoPlaying(true)}
+                >
+                    {/* Background Images with Transitions */}
+                    {backgroundImages.map((image, index) => (
+                        <div
+                            key={index}
+                            className={cn(
+                                "absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000",
+                                index === currentSlide ? "opacity-100" : "opacity-0",
+                            )}
+                            style={{
+                                backgroundImage: `url('${image}')`,
+                            }}
+                        >
+                            <div className="absolute inset-0 bg-black/20" />
+                        </div>
+                    ))}
+
+                    {/* Navigation Arrows */}
+                    <button
+                        onClick={goToPrevious}
+                        style={{ position: "absolute" }}
+                        className=" left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/20 p-3 text-white backdrop-blur-sm transition-all hover:bg-white/30"
+                        aria-label="Previous slide"
+                    >
+                        <ChevronLeft className="h-6 w-6" />
+                    </button>
+
+                    <button
+                        onClick={goToNext}
+                        style={{ position: "absolute" }}
+                        className=" right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white/20 p-3 text-white backdrop-blur-sm transition-all hover:bg-white/30"
+                        aria-label="Next slide"
+                    >
+                        <ChevronRight className="h-6 w-6" />
+                    </button>
+
+                    {/* Slide Indicators */}
+                    <div style={{ position: "absolute" }} className=" bottom-8 left-1/2 z-20 flex -translate-x-1/2 space-x-3">
+                        {backgroundImages.map((_, index) => (
                             <button
                                 key={index}
                                 onClick={() => goToSlide(index)}
@@ -163,26 +183,43 @@ export default function Hero2() {
                                 )}
                                 aria-label={`Go to slide ${index + 1}`}
                             />
-                        ))
-                    }
-                </div >
+                        ))}
+                    </div>
 
-                {/* Progress Bar */}
-                < div className="absolute bottom-0 left-0 h-1 w-full bg-white/20" >
-                    <div
-                        className="h-full bg-gradient-to-r from-blue-400 to-purple-400 transition-all duration-300 ease-linear"
-                        style={{
-                            width: isAutoPlaying ? `${((currentSlide + 1) / backgroundImages.length) * 100}%` : "0%",
-                        }}
-                    />
-                </div >
+                    {/* Progress Bar */}
+                    <div style={{ position: "absolute" }} className=" bottom-0 left-0 h-1 w-full bg-white/20">
+                        <div
+                            className="h-full bg-white transition-all duration-300 ease-linear"
+                            style={{
+                                width: isAutoPlaying ? `${((currentSlide + 1) / backgroundImages.length) * 100}%` : "0%",
+                            }}
+                        />
+                    </div>
+                </div>
 
-                {/* Decorative Elements */}
-                < div className="absolute top-0 left-0 h-full w-full overflow-hidden pointer-events-none" >
-                    <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-gradient-to-br from-blue-400/10 to-purple-600/10 blur-3xl" />
-                    <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-br from-green-400/10 to-blue-600/10 blur-3xl" />
-                </div >
-            </section >
-        </div >
+                {/* Mobile Image Carousel (shown on smaller screens) */}
+                <div
+                    style={{ position: "absolute" }}
+                    className=" inset-0 lg:hidden"
+                    onMouseEnter={() => setIsAutoPlaying(false)}
+                    onMouseLeave={() => setIsAutoPlaying(true)}
+                >
+                    {backgroundImages.map((image, index) => (
+                        <div
+                            key={index}
+                            className={cn(
+                                "absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000",
+                                index === currentSlide ? "opacity-100" : "opacity-0",
+                            )}
+                            style={{
+                                backgroundImage: `url('${image}')`,
+                            }}
+                        >
+                            <div className="absolute inset-0 bg-black/60" />
+                        </div>
+                    ))}
+                </div>
+            </section>
+        </div>
     )
 }
